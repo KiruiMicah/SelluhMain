@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy form</title>
+
+    <!-- BOOTSTRAPCSS LINK -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/css/user.css">
+    
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="/Resources/bootstrap js/bootstrap.bundle.js"></script>
+    
+    <!-- FONT AWESOME CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <!-- <=========== NAVBAR STARTS ===========> -->
+    
+    <nav class="selluhnavbar">
+        <div>
+            <a href="#">
+                <h5>Selluh Tech</h5>
+            </a>
+        </div>
+    
+        <div class="menubar" id="menubar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="selluhnavbarul">
+                <li><a href="../user/dashboard.html">Home</a></li>
+                <li><a href="/user/myaccount.html">Account</a></li>
+                <li><a href="/user/policycard.html">My Policy Card</a></li>
+                <li id="signoutBtn"><a>Sign out</a></li>
+        </ul>
+    </nav>
+    <!-- <================= NAVBAR ENDS ================>  -->
+
+    <!-- < =========== APPLICATION FORM SECTIONS STARTS ==========>  -->
+    <section class="healthpolicyforms">
+
+        <div class="healthpolicyintro">
+           <ul>
+                <li id="personaldetailscontrols">PERSONAL DETAILS</li>
+                <li id="policydetailscontrols">POLICY DETAILS</li>
+                <li id="familydetailscontrols">FAMILY DETAILS</li>
+                <li id="medicalhistorycontrols">MEDICAL DETAILS</li>
+           </ul>
+        </div>
+
+        <div class="healthpolicyformsholder">
+
+            <div id="personaldetailsholder">
+                <h5>PERSONAL DETAILS</h5>
+
+                <div class="personaldetailsholder">
+                    <div>
+                        <label for="">Enter your name</label>
+                        <input type="text" name="" id="holdername" placeholder="Enter your name">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your phonenumber</label>
+                        <input type="text" name="" id="phonenumber" placeholder="Enter your phonenumber">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your work number</label>
+                        <input type="text" name="" id="worknumber" placeholder="Enter your work number">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your pin</label>
+                        <input type="text" name="" id="pin" placeholder="Enter your pin">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your postal adress</label>
+                        <input type="text" name="" id="postaladress" placeholder="Enter your postal adress">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your postal code</label>
+                        <input type="text" name="" id="postalcode" placeholder="Enter your postal code">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your town</label>
+                        <input type="text" name="" id="town" placeholder="Enter your town">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your email</label>
+                        <input type="text" name="" id="email" placeholder="Enter your email">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your Id No</label>
+                        <input type="text" name="" id="IdNo" placeholder="Enter your Id No">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your marital status</label>
+                        <input type="text" name="" id="maritalstatus" placeholder="Enter your marital status">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your weight</label>
+                        <input type="text" name="" id="weight" placeholder="Enter your weight(kg)">
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your height</label>
+                        <input type="text" name="" id="height" placeholder="Enter your height(m)">
+                    </div>
+                
+                    <div>
+                        <label for="">Select your gender</label>
+                        <select name="" id="gender">
+                            <option>Select your gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <label for="">Enter your date of birth</label>
+                        <input type="date" name="" id="dob">
+                    </div>
+                
+                    <div>
+                        <button>NEXT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="policyldetailsholder" style="display: none;">
+                <h5>POLICY DETAILS</h5>
+
+                <div class="policyldetailsholder">
+                    <div class="d-flex flex-column">
+                        <label for="">Select Cover Plan</label>
+                        <select name="" id="coverplan">
+                            <option>Select Coverplan</option>
+                            <option value="Family">Family</option>
+                            <option value="Individual">Individual</option>
+                        </select>
+                    </div>
+                
+                    <div class="d-flex flex-column">
+                        <label for="">Select Cover Type</label>
+                        <select name="" id="coverType">
+                            <option>Select Cover Type</option>
+                            <option value="In-Patient and Out-Patient">In-Patient and Out-Patient</option>
+                            <option value="In-Patient">In-Patient</option>
+                           
+                        </select>
+                    </div>
+                
+                    <div class="d-flex flex-column">
+                        <label for="">Select In-Patient Limit</label>
+                        <select name="" id="selectinpatientlimit">
+                            <option>Select In-Patient Limit</option>
+                            <option value="500000">500000</option>
+                            <option value="1000000">1000000</option>
+                            <option value="2000000">2000000</option>
+                            <option value="3000000">3000000</option>
+                            <option value="5000000">5000000</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <label for="">Select Out-Patient Limit</label>
+                        <select name="" id="selectoutpatientlimit">
+                            <option>Select Out-Patient Limit</option>
+                            <option value="50000">50000</option>
+                            <option value="100000">100000</option>
+                            <option value="150000">150000</option>
+                        
+                        </select>
+                    </div>
+                
+                    <div class="d-flex flex-column">
+                        <label for="">Select Start Date</label>
+                        <input type="datetime-local" name="" id="startdate">
+                    </div>
+                
+                    <div class="d-flex flex-column">
+                        <label for="">Select End Date</label>
+                        <input type="datetime-local" name="" id="enddate">
+                    </div>
+                </div>
+            </div>
+
+            <div id="familystatusholder" style="display: none;">
+                <h5>FAMILY STATUS</h5>
+
+                    <div class="familystatusholder">
+                        <div class="firstbeneficiary">
+                            <div>
+                                <h5>First Beneficiary</h5>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="">Enter surname</label>
+                                <input type="text" name="" class="firstdependant" placeholder="Enter surname">
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Enter your first name</label>
+                                <input type="text" name="" class="firstdependant" placeholder="Enter surname">
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Other names</label>
+                                <input type="text" name="" class="firstdependant" placeholder="Enter surname">
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Select Date of Birth</label>
+                                <input type="date" name="" class="firstdependant">
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Select gender</label>
+                                <select name="" class="firstdependant">
+                                    <option value="">Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Relationship</label>
+                                <select name="" class="firstdependant">
+                                    <option value="">Relationship</option>
+                                    <option value="Spouse">Spouse</option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Living with you?</label>
+                                <select name="" class="firstdependant">
+                                    <option value="">Living with you?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="secondbeneficiary">
+                            <div>
+                                <h5>Second Beneficiary</h5>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="">Enter surname</label>
+                                <input type="text" name="" class="secondependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Enter your first name</label>
+                                <input type="text" name="" class="secondependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Other names</label>
+                                <input type="text" name="" class="secondependant" placeholder="Enter surname">
+                            </div>
+                        
+                        <div class="d-flex flex-column">
+                            <label for="">Select Date of Birth</label>
+                            <input type="date" name="" class="secondependant">
+                        </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select gender</label>
+                                <select name="" class="secondependant">
+                                    <option value="">Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Relationship</label>
+                                <select name="" class="secondependant">
+                                    <option value="">Relationship</option>
+                                    <option value="Spouse">Spouse</option>
+                                    <option value="Son">Son</option>
+                                    <option value="Daughter">Daughter</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Living with you?</label>
+                                <select name="" class="secondependant">
+                                    <option value="">Living with you?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="thirdbeneficiary">
+                            <div>
+                                <h5>Third Beneficiary</h5>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="">Enter surname</label>
+                                <input type="text" name="" class="thriddependant" placeholder="Enter surname">
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Enter your first name</label>
+                                <input type="text" name="" class="thriddependant" placeholder="Enter surname">
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Other names</label>
+                                <input type="text" name="" class="thriddependant" placeholder="Enter surname">
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Select Date of Birth</label>
+                                <input type="date" name="" class="thriddependant">
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Select gender</label>
+                                <select name="" class="thriddependant">
+                                    <option value="">Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Relationship</label>
+                                <select name="" class="thriddependant">
+                                    <option value="">Relationship</option>
+                                    <option value="Spouse">Spouse</option>
+                                    <option value="Son">Son</option>
+                                    <option value="Daughter">Daughter</option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <label for="">Living with you?</label>
+                                <select name="" class="thriddependant">
+                                    <option value="">Living with you?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="fourthbeneficiary">
+                            <div>
+                                <h5>Fourth Beneficiary</h5>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="">Enter surname</label>
+                                <input type="text" name="" class="fourthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Enter your first name</label>
+                                <input type="text" name="" class="fourthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Other names</label>
+                                <input type="text" name="" class="fourthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select Date of Birth</label>
+                                <input type="date" name="" class="fourthdependant">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select gender</label>
+                                <select name="" class="fourthdependant">
+                                    <option value="">Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Relationship</label>
+                                <select name="" class="fourthdependant">
+                                    <option value="">Relationship</option>
+                                    <option value="Spouse">Spouse</option>
+                                    <option value="Son">Son</option>
+                                    <option value="Daughter">Daughter</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Living with you?</label>
+                                <select name="" class="fourthdependant">
+                                    <option value="">Living with you?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                    
+                        <div class="fifthbeneficiary">
+                            <div>
+                                <h5>Fifth Beneficiary</h5>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="">Enter surname</label>
+                                <input type="text" name="" class="fifthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Enter your first name</label>
+                                <input type="text" name="" class="fifthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Other names</label>
+                                <input type="text" name="" class="fifthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select Date of Birth</label>
+                                <input type="date" name="" class="fifthdependant">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select gender</label>
+                                <select name="" class="fifthdependant">
+                                    <option value="">Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Relationship</label>
+                                <select name="" class="fifthdependant">
+                                    <option value="">Relationship</option>
+                                    <option value="Spouse">Spouse</option>
+                                    <option value="Son">Son</option>
+                                    <option value="Daughter">Daughter</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Living with you?</label>
+                                <select name="" class="fifthdependant">
+                                    <option value="">Living with you?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="sixthbeneficiary">
+                            <div>
+                                <h5>Sixth Beneficiary</h5>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="">Enter surname</label>
+                                <input type="text" name="" class="sixthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Enter your first name</label>
+                                <input type="text" name="" class="sixthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Other names</label>
+                                <input type="text" name="" class="sixthdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select Date of Birth</label>
+                                <input type="date" name="" class="sixthdependant">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select gender</label>
+                                <select name="" class="sixthdependant">
+                                    <option value="">Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Relationship</label>
+                                <select name="" class="sixthdependant">
+                                    <option value="">Relationship</option>
+                                    <option value="Spouse">Spouse</option>
+                                    <option value="Son">Son</option>
+                                    <option value="Daughter">Daughter</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Living with you?</label>
+                                <select name="" class="sixthdependant">
+                                    <option value="">Living with you?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                
+
+                        <div class="seventhbeneficiary">
+                            <div>
+                                <h5>Seventh Beneficiary</h5>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="">Enter surname</label>
+                                <input type="text" name="" class="sevethdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Enter your first name</label>
+                                <input type="text" name="" class="sevethdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Other names</label>
+                                <input type="text" name="" class="sevethdependant" placeholder="Enter surname">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select Date of Birth</label>
+                                <input type="date" name="" class="sevethdependant">
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Select gender</label>
+                                <select name="" class="sevethdependant">
+                                    <option value="">Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Relationship</label>
+                                <select name="" class="sevethdependant">
+                                    <option value="">Relationship</option>
+                                    <option value="Spouse">Spouse</option>
+                                    <option value="Son">Son</option>
+                                    <option value="Daughter">Daughter</option>
+                                </select>
+                            </div>
+                        
+                            <div class="d-flex flex-column">
+                                <label for="">Living with you?</label>
+                                <select name="" class="sevethdependant">
+                                    <option value="">Living with you?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button id="testing">SUBMIT</button>
+                    </div>
+            </div>
+
+            
+
+            <div id="medicalhistoryholder" style="display: none;">
+                <h5>MEDICAL HISTORY</h5>
+
+                <div class="medicalhistoryholder">
+                    <div class="medicalhistory">
+                
+                            <div class="questionone">
+                                <p>
+                                    (a) Are you or any of your dependants suffering from any physical defect?
+                                </p>
+                    
+                                <div>
+                                    <label for="">Yes</label>
+                                    <input type="radio" name="defect" id="yesphysicaldefect">
+                    
+                    
+                                    <label for="">No</label>
+                                    <input type="radio" name="defect" id="nophysicaldefect">
+                                </div>
+                    
+                                <div class="d-flex flex-column">
+                                    <p>
+                                        (b) If so please state the nature of the detect.
+                                    </p>
+                    
+                                    <input type="text" name="" id="whatphysicaldefect" placeholder="">
+                                </div>
+                            </div>
+                    
+                            <div class="questiontwo">
+                                <p>
+                                    (a) Are you or any of your dependants suffering from any physical defect?
+                                </p>
+                    
+                                <div>
+                                    <label for="">Yes</label>
+                                    <input type="radio" name="defec" id="yesdependantdefect">
+                    
+                    
+                                    <label for="">No</label>
+                                    <input type="radio" name="defec" id="nodependantdefect">
+                                </div>
+                    
+                                <div class="d-flex flex-column">
+                                    <p>
+                                        (b) If so please state the nature of the detect.
+                                    </p>
+                    
+                                    <input type="text" name="" id="whatdependantdefect" placeholder="">
+                                </div>
+                            </div>
+                    
+                    
+                            <div class="questionfour">
+                    
+                    
+                                <div class="d-flex flex-column">
+                                    <p>
+                                        (a) State any allergies
+                                    </p>
+                    
+                                    <input type="text" name="" id="allergies" placeholder="State any allergies">
+                                </div>
+                            </div>
+                    
+                            <div class="questionfive">
+            
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Medical Conditions</th>
+                                                <th>01</th>
+                                                <th>02</th>
+                                                <th>03</th>
+                                                <th>04</th>
+                                                <th>05</th>
+                                                <th>06</th>
+                                                <th>07</th>
+                                            </tr>
+                                        </thead>
+                                        
+                    
+                                        <tbody>
+                                            <tr>
+                                                <td>a</td>
+                                                <td>Asthma</td>
+                                                <td><input type="checkbox" name="" id="asthmaone"></td>
+                                                <td><input type="checkbox" name="" id="asthmatwo"></td>
+                                                <td><input type="checkbox" name="" id="asthmathree"></td>
+                                                <td><input type="checkbox" name="" id="asthmafour"></td>
+                                                <td><input type="checkbox" name="" id="asthmafive"></td>
+                                                <td><input type="checkbox" name="" id="asthmasix"></td>
+                                                <td><input type="checkbox" name="" id="asthmaseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>b</td>
+                                                <td>Diabetes</td>
+                                                <td><input type="checkbox" name="" id="diabetesone"></td>
+                                                <td><input type="checkbox" name="" id="diabetestwo"></td>
+                                                <td><input type="checkbox" name="" id="diabetesthree"></td>
+                                                <td><input type="checkbox" name="" id="diabetesfour"></td>
+                                                <td><input type="checkbox" name="" id="diabetesfive"></td>
+                                                <td><input type="checkbox" name="" id="diabetessix"></td>
+                                                <td><input type="checkbox" name="" id="diabetesseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>c</td>
+                                                <td>Hypertension</td>
+                                                <td><input type="checkbox" name="" id="hypertensionone"></td>
+                                                <td><input type="checkbox" name="" id="hypertensiontwo"></td>
+                                                <td><input type="checkbox" name="" id="hypertensionthree"></td>
+                                                <td><input type="checkbox" name="" id="hypertensionfour"></td>
+                                                <td><input type="checkbox" name="" id="hypertensionfive"></td>
+                                                <td><input type="checkbox" name="" id="hypertensionsix"></td>
+                                                <td><input type="checkbox" name="" id="hypertensionseven"></td>
+                                               
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>d</td>
+                                                <td>Convulsions</td>
+                                                <td><input type="checkbox" name="" id="convolusionone"></td>
+                                                <td><input type="checkbox" name="" id="convolusiontwo"></td>
+                                                <td><input type="checkbox" name="" id="convolusionthree"></td>
+                                                <td><input type="checkbox" name="" id="convolusionfour"></td>
+                                                <td><input type="checkbox" name="" id="convolusionfive"></td>
+                                                <td><input type="checkbox" name="" id="convolusionsix"></td>
+                                                <td><input type="checkbox" name="" id="convolusionseven"></td>
+                                                
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>e</td>
+                                                <td>Gastric orDuodenal ulcers</td>
+                                                <td><input type="checkbox" name="" id="gastricone"></td>
+                                                <td><input type="checkbox" name="" id="gastrictwo"></td>
+                                                <td><input type="checkbox" name="" id="gastricthree"></td>
+                                                <td><input type="checkbox" name="" id="gastricfour"></td>
+                                                <td><input type="checkbox" name="" id="gastricfive"></td>
+                                                <td><input type="checkbox" name="" id="gastricsix"></td>
+                                                <td><input type="checkbox" name="" id="gastricseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>f</td>
+                                                <td>Heart Disease</td>
+                                                <td><input type="checkbox" name="" id="heartone"></td>
+                                                <td><input type="checkbox" name="" id="heartwo"></td>
+                                                <td><input type="checkbox" name="" id="hearthree"></td>
+                                                <td><input type="checkbox" name="" id="heartfour"></td>
+                                                <td><input type="checkbox" name="" id="heartfive"></td>
+                                                <td><input type="checkbox" name="" id="heartsix"></td>
+                                                <td><input type="checkbox" name="" id="heartseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>g</td>
+                                                <td>Leukemia or Sickle cell Diseases</td>
+                                                <td><input type="checkbox" name="" id="leukemiaone"></td>
+                                                <td><input type="checkbox" name="" id="leukemiatwo"></td>
+                                                <td><input type="checkbox" name="" id="leukemiathree"></td>
+                                                <td><input type="checkbox" name="" id="leukemiafour"></td>
+                                                <td><input type="checkbox" name="" id="leukemiafive"></td>
+                                                <td><input type="checkbox" name="" id="leukemiasix"></td>
+                                                <td><input type="checkbox" name="" id="leukemiaseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>h</td>
+                                                <td>Neurological Diseases</td>
+                                                <td><input type="checkbox" name="" id="neurologicalone"></td>
+                                                <td><input type="checkbox" name="" id="neurologicaltwo"></td>
+                                                <td><input type="checkbox" name="" id="neurologicalthree"></td>
+                                                <td><input type="checkbox" name="" id="neurologicalfour"></td>
+                                                <td><input type="checkbox" name="" id="neurologicalfive"></td>
+                                                <td><input type="checkbox" name="" id="neurologicalsix"></td>
+                                                <td><input type="checkbox" name="" id="neurologicalseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>i</td>
+                                                <td>Gailstones</td>
+                                                <td><input type="checkbox" name="" id="gailstoneone"></td>
+                                                <td><input type="checkbox" name="" id="gailstonetwo"></td>
+                                                <td><input type="checkbox" name="" id="gailstonethree"></td>
+                                                <td><input type="checkbox" name="" id="gailstonefour"></td>
+                                                <td><input type="checkbox" name="" id="gailstonefive"></td>
+                                                <td><input type="checkbox" name="" id="gailstonesix"></td>
+                                                <td><input type="checkbox" name="" id="gailstoneseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>j</td>
+                                                <td>Psychiatric illness</td>
+                                                <td><input type="checkbox" name="" id="psychiatricone"></td>
+                                                <td><input type="checkbox" name="" id="psychiatrictwo"></td>
+                                                <td><input type="checkbox" name="" id="psychiatricthree"></td>
+                                                <td><input type="checkbox" name="" id="psychiatricfour"></td>
+                                                <td><input type="checkbox" name="" id="psychiatricfive"></td>
+                                                <td><input type="checkbox" name="" id="psychiatricsix"></td>
+                                                <td><input type="checkbox" name="" id="psychiatricseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>k</td>
+                                                <td>Recurrent Tonsillits</td>
+                                                <td><input type="checkbox" name="" id="tonsillitsone"></td>
+                                                <td><input type="checkbox" name="" id="tonsillitstwo"></td>
+                                                <td><input type="checkbox" name="" id="tonsillitsthree"></td>
+                                                <td><input type="checkbox" name="" id="tonsillitsfour"></td>
+                                                <td><input type="checkbox" name="" id="tonsillitsfive"></td>
+                                                <td><input type="checkbox" name="" id="tonsillitssix"></td>
+                                                <td><input type="checkbox" name="" id="tonsillitsseven"></td>
+                                              
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>l</td>
+                                                <td>Arthrithis</td>
+                                                <td><input type="checkbox" name="" id="arthrithisone"></td>
+                                                <td><input type="checkbox" name="" id="arthrithistwo"></td>
+                                                <td><input type="checkbox" name="" id="arthrithisthree"></td>
+                                                <td><input type="checkbox" name="" id="arthrithisfour"></td>
+                                                <td><input type="checkbox" name="" id="arthrithisfive"></td>
+                                                <td><input type="checkbox" name="" id="arthrithissix"></td>
+                                                <td><input type="checkbox" name="" id="arthrithisseven"></td>
+                    
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>m</td>
+                                                <td>Fibroids</td>
+                                                <td><input type="checkbox" name="" id="fibroidsone"></td>
+                                                <td><input type="checkbox" name="" id="fibroidstwo"></td>
+                                                <td><input type="checkbox" name="" id="fibroidsthree"></td>
+                                                <td><input type="checkbox" name="" id="fibroidsfour"></td>
+                                                <td><input type="checkbox" name="" id="fibroidsfive"></td>
+                                                <td><input type="checkbox" name="" id="fibroidssix"></td>
+                                                <td><input type="checkbox" name="" id="fibroidsseven"></td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>n</td>
+                                                <td>Menstrual Disorders</td>
+                                                <td><input type="checkbox" name="" id="menstrualone"></td>
+                                                <td><input type="checkbox" name="" id="menstrualtwo"></td>
+                                                <td><input type="checkbox" name="" id="menstrualthree"></td>
+                                                <td><input type="checkbox" name="" id="menstrualfour"></td>
+                                                <td><input type="checkbox" name="" id="menstrualfive"></td>
+                                                <td><input type="checkbox" name="" id="menstrualsix"></td>
+                                                <td><input type="checkbox" name="" id="menstrualseven"></td>
+                    
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>o</td>
+                                                <td>Cancer</td>
+                                                <td><input type="checkbox" name="" id="cancerone"></td>
+                                                <td><input type="checkbox" name="" id="cancertwo"></td>
+                                                <td><input type="checkbox" name="" id="cancerthree"></td>
+                                                <td><input type="checkbox" name="" id="cancerfour"></td>
+                                                <td><input type="checkbox" name="" id="cancerfive"></td>
+                                                <td><input type="checkbox" name="" id="cancersix"></td>
+                                                <td><input type="checkbox" name="" id="cancerseven"></td>
+                    
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>p</td>
+                                                <td>Others</td>
+                                                <td><input type="checkbox" name="" id="othermedicalconditionsone"></td>
+                                                <td><input type="checkbox" name="" id="othermedicalconditionstwo"></td>
+                                                <td><input type="checkbox" name="" id="othermedicalconditionsthree"></td>
+                                                <td><input type="checkbox" name="" id="othermedicalconditionsfour"></td>
+                                                <td><input type="checkbox" name="" id="othermedicalconditionsfive"></td>
+                                                <td><input type="checkbox" name="" id="othermedicalconditionssix"></td>
+                                                <td><input type="checkbox" name="" id="othermedicalconditionsseven"></td>
+                                            </tr>
+                    
+                                        </tbody>
+                                    </table>
+                
+                            </div>
+                    
+                            <div class="questionsix">
+                                <div>
+                                    <h5>Surgery and Hospital Admission</h5>
+                                    <p>
+                                        Please supply details of all surgical procedure(s) and ALL HOSPITAL ADMISSION that you
+                                        or any your dependants have undergone in the past, and or details of all plannned surgical
+                                        procedure(s)
+                                        and ALL HOSPITAL ADMISSION that you or any your dependants expect to undergo in the future?
+                                    </p>
+                                </div>
+                    
+                                <div class="questionsixtable">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Hospital/Doctor</th>
+                                                <th>Surgical procedure/ hospital Admission</th>
+                                                <th>Date</th>
+                                                <th>Diagnosis</th>
+                                            </tr>
+                                        </thead>
+                    
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="date" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <textarea name="" id="" cols="30" placeholder="Enter Diagnosis" rows="3"></textarea>
+                                                </td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="date" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <textarea name="" id="" cols="30" placeholder="Enter your diagnosis"
+                                                        rows="3"></textarea>
+                                                </td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="date" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <textarea name="" id="" placeholder="Enter your diagnosis" cols="30"
+                                                        rows="3"></textarea>
+                                                </td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="date" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <textarea name="" id="" placeholder="Enter your diagnosis" cols="30"
+                                                        rows="3"></textarea>
+                                                </td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="date" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <textarea name="" id="" placeholder="Enter your diagnosis" cols="30"
+                                                        rows="3"></textarea>
+                                                </td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="text" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <input type="date" name="" id="">
+                                                </td>
+                    
+                                                <td>
+                                                    <textarea name="" id="" placeholder="Enter your diagnosis" cols="30"
+                                                        rows="3"></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                    
+                            <div class="questionseven">
+                                <div>
+                                    <p>Are there any other circumstances in your current or past medical history not mentioned above which
+                                        may result
+                                        in hospitalization in the future?
+                                    </p>
+                    
+                                    <input type="text" name="" id="othermedicalconditions" placeholder="">
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="personaluploads">
+
+                
+            </div>
+
+        </div>
+    </section>
+    <!-- < =========== APPLICATION FORM SECTIONS STARTS ==========>  -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <script src="../js/config.js"></script>
+    <script src="../user/js/healthpolicyforms.js"></script>
+    <script src="../user/js/navbartoggler.js"></script>
+</body>
+</html>

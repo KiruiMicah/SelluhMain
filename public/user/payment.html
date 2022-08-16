@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <!-- BOOTSTRAPCSS LINK -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/css/user.css">
+    
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="/Resources/bootstrap js/bootstrap.bundle.js"></script>
+    
+    <!-- FONT AWESOME CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <!-- < ============  PAYMENT MODAL STARTS ============> -->
+    <section class="paymentsection">
+        <div class="paymentmodal">
+            <div class="paymentlogo">
+                <h5>Selluh Tech</h5>
+                <img height="100px" src="../Resources/Images/selluhlogo.jpg" alt="" class="img-fluid">
+            </div>
+
+            <div class="paymmentmethod">
+                <div>
+                    <input type="radio" name="" id="">
+                    <label for="">Mpesa</label>
+                </div>
+                <img height="100px" src="../Resources/Images/hospital logo.jpg" alt="" class="img-fluid">
+            </div>
+
+            <div class="paymentamount">
+                <div>
+                    <input type="radio" name="lum" id="">
+                    <label for="">
+                        <p>Yearly pay: <span id="yearlypay"></span></p>
+                    </label>
+                      
+                </div>
+<!--                 
+                <div>
+                    <input type="radio" name="lum" id="">
+                    <label for="">
+                        <p>Monthly pay: <span id="mothlypay"></span></p>
+                    </label>
+                  
+                </div>     -->
+            </div>
+
+            <div class="paymentalerts" >
+               <p>
+                    By Proceeding to pay you'll receieve a push notification
+                    on your phone for the amount selected above. Enter pin and press
+                    ok to complete the process
+               </p>
+               <hr>
+            </div>
+
+            <div class="paymentsbutton">
+                <button id="proceedtopay" class="btn btn-outline-success">PROCEED TO PAY</button>
+                <button class="btn btn-outline-danger">CANCEL</button>
+            </div>
+        </div>
+
+        <div  class="successmodal" style="display: none;">
+            <div>
+                <div class="d-flex align-items-center">
+                    <img src="/Resources/Images/selluhlogo.jpg" alt="">
+                    <h5 style="color:red ;">Selluh Tech</h5>
+                </div>
+                <p>
+                    Dear xxxx thanks for purchasing a health
+                    policy with xxxx insurance company your
+                    policy number is xxxx navigate to my policy card
+                    to see your policy details and print out your policy
+                    <hr>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <script src="../js/config.js"></script>
+    <script src="../user/js/payment.js"></script>
+    
+</body>
+</html>

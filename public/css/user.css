@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.selluhnavbar {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: blueviolet;
+    position: sticky;
+    align-items: center;
+}
+.selluhnavbar a {
+    text-decoration: none;
+    color: white;
+}
+.menubar {
+    font-size: 1.3rem;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+.selluhnavbar ul {
+    display: flex;
+    cursor: pointer;
+}
+.selluhnavbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: capitalize;
+}
+.selluhnavbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* <======= navbar styling ends =======> */
+
+/* <====== userdahsboard start ========> */
+.usersdashboardsection {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.usersdashboardintro {
+    width: 100%;
+    padding: 1.2rem;    
+}
+.policycardsholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin: 0 auto;
+}
+.policycard {
+    width: 15rem;
+    padding: 1.2rem;
+    margin: .5rem;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+}
+.policycard img {
+    height: 10vh;
+    width: 100%;
+    object-fit: cover;
+}
+.policycard h5 {
+    color: red;
+}
+.policycard a {
+    text-decoration: none;
+    padding: .5rem;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+}
+
+/* <====== userdahsboard ends ========> */
+
+
+/* <====== allpolicies start ========> */
+
+.allpolicies {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.allpoliciesDescription {
+    width: 100%;
+    padding: 1.2rem;
+}
+.allpoliciesholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin: 0 auto;
+}
+.allpolicycard {
+    width: 15rem;
+    padding: 1.2rem;
+    margin: .5rem;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+}
+.allpolicycard img {
+    height: 10vh;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 1rem;
+}
+.allpolicycard h5 {
+    color: red;
+}
+.allpolicycard a {
+    text-decoration: none;
+    padding: .5rem;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+}
+
+/* <====== allpolicies ends ========> */
+
+/* <================ HEALTH POLICY STARTS ==========> */
+.healthpolicyforms {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.healthpolicyintro ul {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.healthpolicyintro ul li {
+    list-style-type: none;
+    background-color: aliceblue;
+    padding: .5rem;
+    color: red;
+}
+.healthpolicyformsholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    margin: 0 auto;
+}
+.personaldetailsholder {
+    padding: 1rem;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.personaldetailsholder input {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    background-color: white; 
+    outline: none;
+    border: 1px solid black;
+}
+.personaldetailsholder select {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+.personaldetailsholder button {
+    padding: .5rem ;
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 400%;
+}
+.personaldetailsholder label {
+    color: white;
+}
+.policyldetailsholder {
+    padding: 1rem;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.policyldetailsholder input {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+}
+.policyldetailsholder select {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+.policyldetailsholder label {
+    color: white;
+}
+.familystatusholder {
+    padding: 1rem;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.familystatusholder input {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+
+}
+.familystatusholder select {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+.familystatusholder label {
+    color: white;
+}
+.firstbeneficiary {
+    padding: 1rem;
+    border: 1px solid white;
+    margin: .5rem;
+}
+.secondbeneficiary {
+    padding: 1rem;
+    border: 1px solid white;
+    margin: .5rem;
+}
+.thirdbeneficiary {
+    padding: 1rem;
+    border: 1px solid white;
+    margin: .5rem;
+}
+.fourthbeneficiary {
+    padding: 1rem;
+    border: 1px solid white;
+    margin: .5rem;
+}
+.fifthbeneficiary {
+    padding: 1rem;
+    border: 1px solid white;
+    margin: .5rem;
+}
+.sixthbeneficiary {
+    padding: 1rem;
+    border: 1px solid white;
+    margin: .5rem;
+}
+.seventhbeneficiary {
+    padding: 1rem;
+    border: 1px solid white;
+    margin: .5rem;
+}
+.medicalhistoryholder {
+    padding: 1rem;
+    width: 100%;
+    background-color: blueviolet;
+    margin-bottom: 1rem;
+    color: white;
+}
+.questionone {
+    border: 1px solid red;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+.questiontwo {
+    border: 1px solid red;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+.questionfour {
+    border: 1px solid red;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+.questionfive {
+    border: 1px solid red;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    overflow: auto;
+}
+.questionsix {
+    border: 1px solid red;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    overflow: auto;
+}
+
+.medicalhistoryholder input {
+    /* width: 100%; */
+    padding: .4rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+}
+.medicalhistoryholder table {
+    color: white;
+}
+.medicalhistoryholder table input {
+    padding: .4rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    width: 100%;
+}
+.medicalhistoryholder table textarea {
+    padding: .4rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+}
+
+.medicalhistoryholder label {
+    color: white;
+}
+
+/* <================ HEALTH POLICY ENDS ==========> */
+
+/* <================ USER PAYMENT STARTS ==================> */
+
+.paymentsection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.paymentmodal {
+    width: 20rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px;
+    height: 80vh;
+    overflow: auto;
+    margin-bottom: .5rem;
+}
+.paymentlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+.paymentlogo img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.paymmentmethod {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.paymmentmethod img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.paymentsbutton{
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem;
+}
+.paymentsbutton button {
+    padding: 10px;
+
+}
+.successmodal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    border: 1px solid green;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px;
+}
+.successmodal p {
+    color: green;
+}
+.successmodal img {
+    height: 100px;
+}
+/* <================ USER PAYMENT ENDS ==================> */
+
+
+/* <============ USER POLICY CARD STARTS =================> */
+.mypolicycard {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.mypolicycardtitle {
+    width: 100%;
+    padding: 1.2rem;
+}
+.mypolicycardsholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mypolicycardmodal {
+    border: 1px solid red;
+    width: 40rem;
+    padding: 1.2rem;
+    margin: .5rem;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+
+}
+.mypolicycardpersonalinfo {
+    padding: .5rem;
+}
+.mypolicycardinsurancedetails {
+    padding: .5rem;
+}
+.policycardlogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.policycardlogo img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+/* <============ USER POLICY CARD ENDS =================> */
+.myaccount {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.myaccountcontrols {
+    width: 100%;
+    padding: 1.2rem;
+}
+.myaccountcontrols ul {
+    display: flex;
+    justify-content: space-around;
+}
+.myaccountcontrols ul li {
+    list-style-type: none;
+    border-bottom: 2px solid blueviolet;
+    padding: .4rem;
+    color: black;
+    cursor: pointer;   
+}
+.myaccountmodalholders {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.editbiomodalcontents input{
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+    margin-bottom: .5rem;
+}
+
+.editbiomodalcontents input[type='text']:focus {
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    color: white;
+    
+}
+.editbiomodal {
+    width: 100%;
+    padding: 1.2rem;
+    margin: .5rem;
+    /* border: 2px solid blueviolet; */
+    border-radius: 5px;
+}
+.authmodal {
+    width: 100%;
+    padding: 1.2rem;
+    margin: .5rem;
+    /* border: 2px solid blueviolet; */
+    border-radius: 5px;
+}
+.authmodal input {
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+    margin-bottom: .5rem;
+}
+.authmodal select {
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+    margin-bottom: .5rem;
+}
+.authmodal button {
+    padding: .5rem;
+    border: 1px solid blueviolet;
+    outline: none;
+    background-color: white;
+}
+.dischargemodal {
+    width: 100%;
+    padding: 1.2rem;
+    margin: .5rem;
+    /* border: 2px solid blueviolet; */
+    border-radius: 5px;
+}
+.dischargemodal button {
+    padding: .5rem;
+    border: 1px solid blueviolet;
+    outline: none;
+    background-color: white;
+}
+/* <================ USER ACCOUNT STARTS ==============> */
+
+/* <================ USER ACCOUNT ENDS ==============> */
+
+
+
+/*  <======== CSS MEDIA QUERIES FOR SMALL SCREENS =========>  */
+
+@media  screen and (max-width:600px) {
+    .menubar {
+        font-size: 1.5rem;
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+    .selluhnavbar {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: blueviolet;
+        position: sticky;
+    }
+    .selluhnavbar ul {
+        background-color: blueviolet;
+        width: 35%;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 2px 2px 4px 4px blueviolet;
+        display: none;
+        
+    }
+    .selluhnavbar ul li {
+        padding: 1rem;
+    }
+    .policycard {
+        width: 15rem;
+        padding: 1.2rem;
+        margin: .5rem auto;
+        border: 1px solid red;
+    }
+    .allpolicycard {
+        width: 15rem;
+        padding: 1.2rem;
+        margin: .5rem auto;
+        border: 2px solid blueviolet;
+        border-radius: 5px;
+    }
+    .paymentmodal {
+        height: 80vh;
+    }
+    .paymentsection {
+        margin: 0 auto;
+    }
+    .mypolicycardmodal {
+        border: 1px solid red;
+        width: 40rem;
+        padding: 1.2rem;
+        margin: .5rem;
+        border: 2px solid blueviolet;
+        border-radius: 5px;
+    
+    }
+}
+
+/*  <======== CSS MEDIA QUERIES FOR SMALL SCREENS =========>  */

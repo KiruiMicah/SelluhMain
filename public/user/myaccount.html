@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <!-- BOOTSTRAPCSS LINK -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/css/user.css">
+    
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="/Resources/bootstrap js/bootstrap.bundle.js"></script>
+    
+    <!-- FONT AWESOME CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <=============== JQUERY LINK ===================> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+        <!-- <=========== NAVBAR STARTS ===========> -->
+        
+        <nav class="selluhnavbar">
+            <div>
+                <a href="#">
+                    <h5>Selluh Tech</h5>
+                </a>
+            </div>
+        
+            <div class="menubar" id="menubar">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="selluhnavbarul">
+                <li><a href="../user/dashboard.html">Home</a></li>
+                <li><a href="/user/myaccount.html">Account</a></li>
+                <li><a href="/user/policycard.html">My Policy Card</a></li>
+                <li id="signoutBtn"><a>Sign out</a></li>
+            </ul>
+        </nav>
+        <!-- <================= NAVBAR ENDS ================>  -->
+
+
+    <!-- <============MY ACCOUNT SECTION STARTS ============> -->
+    
+    <section class="myaccount">
+        <div class="myaccountcontrols">
+            <ul>
+                <li id="authenticatecontrol">AUTHENTICATE</li>
+                <li id="editprofilecontrol">EDIT PROFILE</li>    
+            </ul>
+        </div>
+
+        <div class="myaccountmodalholders">
+            <!-- <========= EDIT PROFILE MODAL ==========> -->
+            <div class="editbiomodal" id="editbiomodal" style="display: none;">
+                <div class="editbiomodalcontents">
+
+                    <div>
+                        <h5>EDIT BIO</h5>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Name</label>
+                        </div>
+                        <input type="text" name="" id="username">
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <label for="">Phone Number</label>
+                        </div>
+                        <input type="text" name="" id="userphone">
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="">Email</label>
+                        </div>
+                        
+                        <input type="text" name="" id="useremail">
+                    </div>
+
+                    <div>
+                        <div>
+                            <button id="updatebtn" class="btn btn-outline-success">Update</button>
+                            <button class="btn" type="button" id="updating" style="display: none;" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Updating...
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- <======= AUTHENTICATION MODAL ========> -->
+            <div class="authmodal" id="authmodal" >
+                <div class="authmodalcontents">
+            
+                    <div>
+                        <h5>AUTHENTICATION</h5>
+                    </div>
+            
+                    <form action="/user/myaccount" method="post">
+                        <div>
+                            <input type="text" style="display: none;" name="userphoneNumber" id="userphoneNumber">
+                        </div>
+            
+                        <div>
+                            <input type="text" style="display: none;" name="randomcode" id="randomcode">
+                        </div>
+            
+                        <div>
+                            <input type="text" style="display: none;" name="userId" id="userId">
+                        </div>
+                        <div>
+                            <button>REQUEST AUTH CODE</button>
+                        </div>
+                    </form>
+                    <div class="d-flex flex-column">
+                        <label for="">Enter 4 digit code</label>
+                        <input type="text" name="" placeholder="Enter four digit code" id="code">
+                    </div>
+                    <div>
+                        <select name="" id="allhospitals">
+                            <option>Choose hospital</option>
+                        </select>
+                    </div>
+            
+                    <div>
+                        <button id="codesubmitbutton" class="btn btn-outline-success">SUBMIT</button>
+                        <button class="btn" type="button" id="submitting" style="display: none;" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            SUBMITTING...
+                        </button>
+                    </div>
+            
+            
+                </div>
+            </div>
+
+            <!-- <========= DISCHARGE MODAL ==========> -->
+            <div class="dischargemodal" id="dischargemodal" style="display: none;">
+                <div>
+                    <div>
+                        <p>Dear <span id="userName"></span> your hospital bill is <span id="userBill"></span></p>
+                        
+                        <div>
+                            <label for="">Diagnosis</label>
+                            <p id="diagnosis"></p>
+                        </div>
+
+                        <div>
+                            <label for="">Nature of treatment</label>
+                            <p id="natureoftreatment"></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="acceptBill">OKAY</button>
+                    <button id="denybill">CANCEL</button>
+                </div>
+            </div>
+
+         
+        </div>
+    </section>
+
+    <!-- <============MY ACCOUNT SECTION ENDS ============> -->
+
+
+    <script src="/user/js/account.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    
+    <script src="../js/config.js"></script>
+    <script src="../user/js/myaccount.js"></script>
+    <script src="../user/js/navbartoggler.js"></script>
+    <script src="../user/js/discharge.js"></script>
+    <script src="../user/js/signout.js"></script>
+</body>
+</html>
+
+
+

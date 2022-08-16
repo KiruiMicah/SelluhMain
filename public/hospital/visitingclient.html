@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting Client</title>
+    <!-- BOOTSTRAPCSS LINK -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="../css/hospital.css">
+    
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="../Resources/bootstrap js/bootstrap.bundle.js"></script>
+    
+    <!-- FONT AWESOME CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <=============== JQUERY LINK ===================> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- <=============== HOSPITAL NAVBAR STARTS  =================> -->
+    
+    <nav class="hospitalnavbar">
+        <div>
+            <a href="#">
+                <h5>Selluh Tech</h5>
+            </a>
+        </div>
+    
+        <div class="menubar" id="menubar">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <ul>
+            <li><a href="../hospital/dashboard.html">Home</a></li>
+            <li><a href="../hospital/clienthistory.html">Client History</a></li>
+            <li><a href="../hospital/activeclients.html">Active Client</a></li>
+            <li><a href="../hospital/preauth.html">Pre-Auth Forms</a></li>
+            <li><a href="../hospital/claims.html">Claim forms</a></li>
+        </ul>
+    </nav>
+    <!-- <=============== HOSPITAL NAVBAR ENDS  =================> -->
+
+
+    <!-- <==============VISITING CLIENT SECTION STARTS ===============>  -->
+
+    <section class="visitingclients">
+
+        <div class="hospitaldashboardintro">
+            <div class="timeandlogo">
+                <h5>Good Afternoon</h5>
+                <i class="fas fa-sun h3"></i>
+            </div>
+        
+            <div class="hospitallogoandname">
+                <h5>KNH HOSPITAL</h5>
+                <img src="../Resources/Images/hospital logo.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="visitingclienttableandsearchholder">
+
+            <div class="visitingclientsearchholder">
+                <div class="d-flex">
+                    <input type="text" name="" id="" placeholder="Search by number">
+                    <button>SEARCH</button>
+                </div>
+            </div>
+
+            <div class="visitingclienttable">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>INSURANCE COMPANY</th>
+                            <th>TIME IN</th>
+                            <th>STATUS</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="visitingClientData">
+                    
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <!-- <=============== CLAIM FORM MODAL ================> -->
+                    <div class="modal" id="claimform" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5>CLIENTS CLAIM FORM</h5>
+                                </div>
+                    
+                                <div class="modal-body">
+                                    <div class="clientclaimformpersonaldetails">
+                                        <div>
+                                            <h5>Personal Details</h5>
+                                        </div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Patient's name
+                                                <span id="nameOfClient"></span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Date of birth
+                                                <span id="dateOfBirth">20/6/1990</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Hospital
+                                                <span id="hospitalName"></span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Membership Number
+                                                <span>98709098978</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                    
+                                    <div class="clientclaimformdiagnosis">
+                                        <div>
+                                            <h5>For official use</h5>
+                                        </div>
+                    
+                                        <div><span>1.Diagnosis</span></div>
+                                        <div>
+                                            <textarea name="" placeholder="Enter diagnosis" id="diagnosis" cols="30" rows="5"></textarea>
+                                        </div>
+                    
+                                        <div><span>2.How long has the client suffered the same ailment</span></div>
+                                        <div><input type="text" id="timeSufferedAilment"></div>
+                    
+                                        <div><span>3. Nature of treatment</span></div>
+                                        <div>
+                                            <textarea name="" placeholder="Enter treatment" id="natureOfTreatment" cols="30"
+                                                rows="10"></textarea>
+                                        </div>
+                    
+                                        <div>
+                                            <span>4. Dates of any previous treatment for this ailment</span>
+                    
+                                        </div>
+                    
+                                        <div><span>Is it a specialist referral,admission or specialized diagnostic services
+                                                required?</span><label for="">Yes</label><input type="radio" class="form-check-control"
+                                                name="diagnosis" id=""><label for="">No</label><input type="radio"
+                                                class="form-check-control" name="diagnosis" id=""></div>
+                    
+                                        <div>
+                                            <h5>5. Billing</h5>
+                    
+                                            <div>
+                                                <span>Add Consultation fee</span>
+                                                <input type="text" id="consulatationFee" placeholder="Add Consultation fee">
+                                            </div>
+                    
+                                            <div>
+                                                <span>Add lab-tests</span>
+                                                <input type="text" id="labTestsFee" placeholder="Add lab-tests">
+                                            </div>
+                    
+                                            <div>
+                                                <span>Medicine prescription</span>
+                                                <input type="text" id="medicineFee" placeholder="Medicine prescription">
+                                            </div>
+                                        </div>
+                    
+                                        <div class="mt-2">
+                                            <button id="submitClaimBtn">SUBMIT CLAIM</button>
+                                            <button class="btn" type="button" id="submittingClaim" style="display: none;" disabled>
+                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                SUBMTTING CLAIM...
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <!-- <=============== INDIVIDUAL PRE-AUTH FORMS MODAL ================> -->
+                    <div class="modal" tabindex="-1" id="preauthforms">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">PRE-AUTH FORMS</h5>
+                                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                                </div>
+                            
+                                <div class="modal-body">
+                                    <div class="preauthpersonaldetails">
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            
+                                                <span id="coophosiname"></span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Employers Name
+                                                <span id="dateOfBirth">Yangu consultancy</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Employee Name
+                                                <span></span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Member No.
+                                                <span id="">46756576</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Patients Name
+                                                <span id="cooppatientsName"></span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Age
+                                                <span id="">40</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Relationship to Member
+                                                <span id="">Child</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Is patient insured under any other medical or personal Accident Scheme?
+                                                <span id="">Yes</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="ailmentdetails">
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Diagnosis
+                                                <span id="">Malaria</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Clinical summary
+                                                <span id="">
+                                                    <textarea name="" id="clinicalSummary" cols="30" rows="5"
+                                                        placeholder="Clinical Summary"></textarea>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Hospital Fees
+                                                <span id="">20000</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Estimated hospital stay
+                                                <span id="">2 weeks</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Doctors Fees
+                                                <span id="">10000</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Doctors Name
+                                                <span id="">Juan Shitumba</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Doctors signature
+                                                <span id="">JS</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Docotors Qulaification
+                                                <span id="">Lorem ipsum dolor sit amet.</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Telephone No.
+                                                <span id="">0704354951</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="preauthdeclarations">
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                DECLARATION
+                                                <span id="">
+                                                    <div>
+                                                        <p>
+                                                            I <span id="patientsname"></span> declare that all the statement given by me on this
+                                                            form
+                                                            are to the best of my knowlegde true and complete. I authorize the medical
+                                                            insurance provider to obtain medical information from the doctor I have consulted and
+                                                            shall
+                                                            submit to any medical examination(s) if so required by the company
+                                                        </p>
+                                                    </div>
+                                                  
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Patients Signature
+                                                <span id=""></span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                ID NO.
+                                                <span>361294567</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Telephone No.
+                                                <span id="userphonenumber">0704354951</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Date
+                                                <span id="">
+                                                    <input type="date" name="" id="">
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                                <div class="modal-footer">
+                                    <button id="individualSubmit">SUBMIT PRE-AUTH</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            <!-- <=============== CORPORATE PRE-AUTH FORMS MODAL ================> -->
+                <div class="modal" tabindex="-1" id="corporatePreAuth">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">PRE-AUTH FORMS</h5>
+                                <button data-bs-dismiss="modal" class="btn-close"></button>
+                            </div>
+                
+                            <div class="modal-body">
+                                <div class="preauthpersonaldetails">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Hospital Name
+                                            <span id="hosiiName"></span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Employers Name
+                                            <span id="dateOfBirth">Yangu consultancy</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Employee Name
+                                            <span></span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Member No.
+                                            <span id="">46756576</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Patients Name
+                                            <span id="patientssname"></span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Age
+                                            <span id="">40</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Relationship to Member
+                                            <span id="">Child</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Is patient insured under any other medical or personal Accident Scheme?
+                                            <span id="">Yes</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                                <div class="ailmentdetails">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Diagnosis
+                                            <span id="">Malaria</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Clinical summary
+                                            <span id="">
+                                                <textarea name="" id="clinicalSummary" cols="30" rows="5"
+                                                    placeholder="Clinical Summary"></textarea>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Hospital Fees
+                                            <span id="">20000</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Estimated hospital stay
+                                            <span id="">2 weeks</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Doctors Fees
+                                            <span id="">10000</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Doctors Name
+                                            <span id="">Juan Shitumba</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Doctors signature
+                                            <span id="">JS</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Docotors Qulaification
+                                            <span id="">Lorem ipsum dolor sit amet.</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Telephone No.
+                                            <span id="">0704354951</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                                <div class="preauthdeclarations">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            DECLARATION
+                                            <span id="">
+                                                I <span id="patientsname"></span> declare that all the statement given by me on this
+                                                form
+                                                are to the best of my knowlegde true and complete. I authorize the medical
+                                                insurance provider to obtain medical information from the doctor I have consulted and
+                                                shall
+                                                submit to any medical examination(s) if so required by the company
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Patients Signature
+                                            <span id=""></span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            ID NO.
+                                            <span>361294567</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Telephone No.
+                                            <span id="userphonenumber">0704354951</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Date
+                                            <span id="">
+                                                <input type="date" name="" id="">
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                
+                            <div class="modal-footer">
+                                <button id="coopsubmitpreauth">SUBMIT PRE-AUTH</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+    <!-- <==============VISITING CLIENT SECTION ENDS ===============>  -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    
+    <script src="../js/config.js"></script>
+    <script src="../hospital/js/visitingclient.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Auths</title>
+    <!-- BOOTSTRAPCSS LINK -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="../css/hospital.css">
+    
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="../Resources/bootstrap js/bootstrap.bundle.js"></script>
+    
+    <!-- FONT AWESOME CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <=============== JQUERY LINK ===================> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- <=============== HOSPITAL NAVBAR STARTS  =================> -->
+    
+    <nav class="hospitalnavbar">
+        <div>
+            <a href="#">
+                <h5>Selluh Tech</h5>
+            </a>
+        </div>
+    
+        <div class="menubar" id="menubar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="../hospital/dashboard.html">Home</a></li>
+            <li><a href="../hospital/clienthistory.html">Client History</a></li>
+            <li><a href="../hospital/activeclients.html">Active Client</a></li>
+            <li><a href="../hospital/preauth.html">Pre-Auth Forms</a></li>
+            <li><a href="../hospital/claims.html">Claim forms</a></li>
+        </ul>
+    </nav>
+    <!-- <=============== HOSPITAL NAVBAR ENDS  =================> -->
+  
+    <section class="preauthforms">
+        <div class="hospitaldashboardintro">
+            <div class="timeandlogo">
+                <h5>Good Afternoon</h5>
+                <i class="fas fa-sun h3"></i>
+            </div>
+        
+            <div class="hospitallogoandname">
+                <h5>KNH HOSPITAL</h5>
+                <img src="../Resources/Images/hospital logo.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="preauthtableandsearchholder">
+            <div class="preauthsearchholder">
+                <div class="d-flex">
+                    <input type="text" name="" id="" placeholder="Search by number">
+                    <button>SEARCH</button>
+                </div>
+            </div>
+        
+            <div class="preauthtableholder">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>PRE-AUTH TYPE</th>
+                            <th>STATUS</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody id="preauthforms">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal" tabindex="-1" id="preauthformsmodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">PRE-AUTH</h5>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div>
+                                <p>The request has been declined because of <span id="preauthreasons"></span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+        
+        <script src="../js/config.js"></script>
+        <script src="../hospital/js/preauth.js"></script>
+</body>
+</html>

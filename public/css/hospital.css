@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* <======== NAVBAR STYLING STARTS ========> */
+.hospitalnavbar {
+    height: 15vh;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.hospitalnavbar h5, a {
+    color: white;
+    text-decoration: none;
+}
+.menubar {
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+.hospitalnavbar ul {
+    display: flex;
+}
+.hospitalnavbar ul li {
+    padding: .5rem;
+    list-style-type: none;
+}
+.hospitalnavbar ul li a {
+    text-decoration: none;
+}
+
+/* <======== NAVBAR STYLING ENDS ========> */
+
+/* <============== DASHBOARD STYLING STARTS ==============> */
+.hospitaldashboard {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.hospitaldashboardintro {
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.hospitaldashboardsearch {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    overflow: auto;
+    margin: 0 auto;
+}
+.hospitalsearchbartableholder {
+    width: 100%;
+    padding: 1.2rem;
+}
+.hospitalsearchbartableholder input {
+    width: 100%;
+    padding: .6rem;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid blueviolet;
+}
+.hospitalsearchbartableholder button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: .6rem;
+    outline: none;
+    border-radius: 20px;
+}
+.timeandlogo {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    align-items: center;
+}
+.hospitallogoandname {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hospitallogoandname img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* <============== DASHBOARD STYLING ENDS ==============> */
+
+/* <=============== ACTIVE CLIENTS STYLING STARTS ==============> */
+.activeclients {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.activeclientsintro {
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.activeclientsintro select {
+    padding: .7rem;
+    width: 90%;
+    outline: none;
+    border: 1px solid blueviolet;
+}
+.activeclients button {
+    padding: .5rem;
+    border: 1px solid blueviolet;
+    outline: none;
+}
+.activeclientdetailsholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    overflow: auto;
+    margin: 0 auto;
+}
+.personaldetailsholder {
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.personaldetailspolicydetails {
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.dependantspolicydetails {
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+/* <=============== ACTIVE CLIENTS STYLING ENDS ==============> */
+
+/* <=========== VISITING CLIENT SECTION STARTS ===============> */
+.visitingclients {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.visitingclienttableandsearchholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    overflow: auto;
+    margin: 0 auto;
+}
+.visitingclientsearchholder {
+    width: 100%;
+     padding: 1.2rem;
+}
+.visitingclientsearchholder input {
+    width: 100%;
+    padding: .6rem;
+    outline: none;
+    /* border-radius: 20px; */
+    border: 1px solid blueviolet;
+}
+.visitingclientsearchholder button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: .6rem;
+    outline: none;
+    /* border-radius: 20px; */
+}
+.visitingclienttable {
+    width: 100%;
+    padding: 1.2rem;
+}
+
+/* <=========== VISITING CLIENT SECTION ENDS ===============> */
+
+/* <================ CLIENT HISTORY STARTS =====================> */
+
+.clienthistory {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.clienthistorytableandsearchholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    overflow: auto;
+    margin: 0 auto;
+    /* height: 70vh; */
+}
+.clientvisitingsearchholder {
+    width: 100%;
+    padding: 1.2rem;
+}
+
+.clientvisitingsearchholder input {
+    width: 100%;
+    padding: .6rem;
+    outline: none;
+    /* border-radius: 20px; */
+    border: 1px solid blueviolet;
+}
+
+.clientvisitingsearchholder button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: .6rem;
+    outline: none;
+    /* border-radius: 20px; */
+}
+.clienthistoryholder  {
+    width: 100%;
+    padding: 1.2rem;
+    overflow: auto;
+}
+/* <================ CLIENT HISTORY ENDS =====================> */
+
+/* <================= PRE-AUTH FORMS START =====================> */
+.preauthforms {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.preauthtableandsearchholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    overflow: auto;
+    margin: 0 auto;
+}
+.preauthsearchholder {
+    width: 100%;
+    padding: 1.2rem;
+}
+.preauthsearchholder input {
+    width: 100%;
+    padding: .6rem;
+    outline: none;
+    /* border-radius: 20px; */
+    border: 1px solid blueviolet;
+}
+.preauthsearchholder button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: .6rem;
+    outline: none;
+    /* border-radius: 20px; */
+}
+/* <================= PRE-AUTH FORMS ENDS =====================> */
+
+/* <================= CLAIM FORMS STARTS =====================> */
+.claimforms {
+    height: 85vh;
+    width: 100%;
+    padding: 3rem;
+}
+.claimformstableandsearchholder {
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+    overflow: auto;
+    margin: 0 auto;
+}
+.claimformsearchholder {
+    width: 100%;
+    padding: 1.2rem;
+}
+.claimformsearchholder input {
+    width: 100%;
+    padding: .6rem;
+    outline: none;
+    /* border-radius: 20px; */
+    border: 1px solid blueviolet;
+}
+.claimformsearchholder button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: .6rem;
+    outline: none;
+    /* border-radius: 20px; */
+}
+/* <================= CLAIM FORMS ENDS =====================> */

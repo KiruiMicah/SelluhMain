@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Card</title>
+    <!-- BOOTSTRAPCSS LINK -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/css/user.css">
+    
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="/Resources/bootstrap js/bootstrap.bundle.js"></script>
+    
+    <!-- FONT AWESOME CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <=============== JQUERY LINK ===================> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+        <!-- <=========== NAVBAR STARTS ===========> -->
+        
+        <nav class="selluhnavbar">
+            <div>
+                <a href="#">
+                    <h5>Selluh Tech</h5>
+                </a>
+            </div>
+        
+            <div class="menubar" id="menubar">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="selluhnavbarul">
+                <li><a href="../user/dashboard.html">Home</a></li>
+                <li><a href="/user/myaccount.html">Account</a></li>
+                <li><a href="/user/policycard.html">My Policy Card</a></li>
+                <li id="signoutBtn"><a>Sign out</a></li>
+            </ul>
+        </nav>
+        <!-- <================= NAVBAR ENDS ================>  -->
+
+        <!-- <================= MY POLICY CARD STARTS ==================> -->
+
+        <section class="mypolicycard">
+            <div class="mypolicycardtitle">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium, delectus rerum, veniam cum odio accusantium incidunt officiis deleniti blanditiis maxime perspiciatis atque voluptates doloremque sunt ipsam! Reprehenderit, sequi dignissimos.
+                </p>
+            </div>
+
+            <div id="maininsurancepolicycarrier" class="mypolicycardsholder">
+
+
+            </div>
+        </section>
+        <!-- <================= MY POLICY CARD STARTS ==================> -->
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+        
+        <script src="../js/config.js"></script>
+        <script src="../user/js/policycard.js"></script>
+        <script src="../user/js/navbartoggler.js"></script>
+</body>
+</html>

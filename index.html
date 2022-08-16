@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- BOOTSTRAPCSS LINK -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/css/signup.css">
+    
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="./Resources/bootstrap js/bootstrap.bundle.js"></script>
+    
+    <!-- FONT AWESOME CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+   
+    <section class="login">
+        <div class="logindetails">
+            <h5>
+                Welcome Back for a greater Experience
+            </h5>
+
+            <p  style="color: red;" id="logginginerroralerts">
+
+            </p>
+            <div>
+                <input type="email" name="" placeholder="Enter your email" id="email">
+            </div>
+            
+            <div>
+                <input type="password" name="" placeholder="Enter your password" id="password">
+            </div>
+
+            <div>
+                <button id="userLogInbtn">LOG IN</button>
+                <button class="btn" type="button" id="loggingin" style="display: none;" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    LOGGING IN...
+                </button>
+            </div>
+
+            <div>
+                <p><a href="./passwordreset.html">Forgot Password?</a></p>
+            </div>
+            <div>
+                <p>Dont have an account? <a href="/user/signup">Sign up</a></p>
+            </div>
+        </div>
+
+        <div class="loginpictures">
+
+        </div>
+    </section>
+
+    
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+        
+        <script src="./js/config.js"></script>
+        <script src="./js/login.js"></script>
+</body>
+</html>

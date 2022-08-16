@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.selluhsignup {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.signuppicholder {
+    height: 100vh;
+    width: 50%;
+    background-image: url(../Resources/Images/landingimage.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+.signupformsholders {
+    height: 100vh;
+    width: 50%;
+    padding: 3rem;
+    border: 1px solid whitesmoke;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.signupformsholders input {
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: .8rem;
+    border: 1px solid blueviolet;
+    outline: none;
+}
+.signupformsholders button {
+    border: 1px solid blueviolet;
+    outline: none;
+    padding: .5rem;
+    margin-bottom: .8rem;
+}
+
+
+/* <============== LOGIN SECTION STARTS ===============> */
+.login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.loginpictures {
+    height: 100vh;
+    width: 50%;
+    background-image: url(../Resources/Images/agent.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logindetails {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+.logindetails h5 {
+    color: blueviolet;
+    font-size: 200%;
+}
+.logindetails input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border: 1px solid blueviolet;
+    outline: none;
+}
+.logindetails a {
+    text-decoration: none;
+}
+.logindetails button {
+    background-color: white;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    outline: none;
+    padding: .5rem;
+    margin-bottom: .8rem;
+}
+.logindetails button:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+/* <============== LOGIN SECTION ENDS ===============> */
+
+
+/* <============= PASSWORD RESET STARTS ============> */
+.passwordreset   {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.passwordresetdetails {
+    /* width: 100%; */
+    padding: 3rem;
+    box-shadow: 2px 2px 4px 10px whitesmoke;
+}
+.passwordresetdetails p {
+    color: blueviolet;
+    font-size: 1.2rem;
+}
+.passwordresetdetails input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border: 1px solid blueviolet;
+    outline: none;
+}
+.passwordresetdetails button {
+    background-color: white;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    outline: none;
+    padding: .5rem;
+    width: 50%;
+    margin-bottom: .8rem;
+    border-radius: 20px;
+}
+.passwordresetdetails button:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+
+/* <============= PASSWORD RESET ENDS ============> */
+
+/* <================ SMALL SCREEN MEDIA QUERIES ================> */
+@media screen and (max-width:600px) {
+    .selluhsignup {
+        height: 100vh;
+        width: 100%;
+        display:  block;
+    }
+    .signuppicholder {
+        height: 50vh;
+        width: 100%;
+        background-image: url(../Resources/Images/landingimage.png);
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+    }
+    .signupformsholders {
+        height: 50vh;
+        width: 100%;
+        padding: 3rem;
+        border: 1px solid whitesmoke;
+    }
+    .login {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .loginpictures {
+        height: 50vh;
+        width: 100%;
+        background-image: url(../Resources/Images/agent.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .logindetails {
+        height: 50vh;
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        padding: 5rem;
+    }
+    .logindetails h5 {
+        color: blueviolet;
+        font-size: 150%;
+    }
+}
